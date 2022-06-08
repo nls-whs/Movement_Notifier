@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="20"
+                android:useLevel="true">
+                <gradient
+                    android:endColor="@color/vuzix_green"
+                    android:startColor="@color/vuzix_green" />
+                <corners android:radius="6.5dp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

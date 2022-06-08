@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" style="@style/HudTheme.Light"
+    android:theme="@style/ThemeOverlay.NextLevelSports.AppWidgetContainer"
+    android:background="@drawable/bg_gradient">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_directions_walk_24"
+        android:tint="@color/black"
+        android:layout_above="@id/appwidget_text_steps_light"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/appwidget_text_steps_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/stepGoalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:alpha="0.75"
+        android:layout_below="@id/appwidget_text_steps_light"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_dark_outer_light"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/progress_bar_steps_light"
+        tools:progress="60"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/calories"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:tint="@color/black" />
+        <TextView
+            android:id="@+id/text_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/distance"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:tint="@color/black"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/text_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:tint="@color/black"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+        <ImageView
+            android:id="@+id/exercises"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:tint="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

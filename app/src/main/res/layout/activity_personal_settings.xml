@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--Like any normal Android Application -->
+    <!--Bottom Lock style means that the View or real-state available AROUND the center of the screen.
+     The Center of the screen is utilize for hte action menus to give more preference to the options.
+     Also the Top AND BOTTOM of the screen do not animate and are the area to utilize for main UI
+     elements.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTitle"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/personalSettingsTV"
+            android:text="Körperwerte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed">
+        </TextView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/ic_baseline_settings_24"/>
+    </LinearLayout>
+
+    <!--Utilize something similar to this SPACE item to understand the dimensions of the ActionMenu
+    and your available real state.-->
+    <Space
+        android:id="@+id/menu_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_menu_height"
+        android:layout_centerInParent="true"/>
+
+    <!--This item has some custom Attributes from our ATTRIBUTES files. ?valueTextColor.
+    For more information on this kind of reference please refer to:
+    https://developer.android.com/training/custom-views/create-view
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutTitle"
+        android:id="@+id/relativeLayoutGender"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/genderTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Geschlecht: "
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/genderTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/genderTv"
+            android:text="Männlich"
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutBirthday"
+        android:layout_below="@id/relativeLayoutGender"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/birthdayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Alter: "
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/birthdayTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/birthdayTv"
+            android:text="25 Jahre"
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutHeight"
+        android:layout_below="@id/relativeLayoutBirthday"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/heightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Körpergröße: "
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/heightTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/heightTv"
+            android:text="180 cm"
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutHeight"
+        android:id="@+id/relativeLayoutWeight"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/weightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Gewicht: "
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/weightTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/weightTv"
+            android:text="80 kg"
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutWeight"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/BMITv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="BMI: "
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/BMITv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_toRightOf="@id/BMITv"
+            android:text="25"
+            android:textSize="20sp"
+            android:textColor="@color/vuzix_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/personal_settings_title"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu_placeholder"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/vuzix_white"/>
+
+
+</RelativeLayout>

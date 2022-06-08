@@ -1,0 +1,485 @@
+<resources>
+    <string name="app_name">Next Level Sports</string>
+
+    <string name="location_on">Aktiviert</string>
+    <string name="location_off">Deaktiviert</string>
+
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_personal_settings">Körperdaten</string>
+    <string name="title_activity_gender">Geschlecht</string>
+
+    <string-array name="motivation_texts_titles">
+        <item>Wie wär\'s mal wieder mit ein wenig Bewegung?</item>
+        <item>Du hast dich in der letzten Stunde recht wenig bewegt</item>
+        <item>Eine kurze Übung für zwischendurch?</item>
+    </string-array>
+
+    <string-array name="motivation_texts_content">
+        <item>Lass dir eine Übung vorschlagen, die du direkt vor Ort ausführen kannst.</item>
+        <item>Erhalte einen Übungsvorschlag, passend zu deiner aktuellen Umgebung.</item>
+        <item>Eine Übung zwischendurch könnte nicht schaden, lass dir eine passende vorschlagen.</item>
+    </string-array>
+
+    <string-array name="daily_situations">
+        <item>"Park"</item>
+        <item>"Bus"</item>
+        <item>"Playground"</item>
+        <item>"Camping"</item>
+        <item>"Bathroom"</item>
+        <item>"Computer"</item>
+        <item>"Desk"</item>
+        <item>"Bedroom"</item>
+        <item>"Couch"</item>
+        <item>"Food"</item>
+        <item>"Forest"</item>
+        <item>"Lake"</item>
+        <item>"River"</item>
+        <item>"Road"</item>
+        <item>"Room"</item>
+        <item>"Place"</item>
+        <item>"School"</item>
+        <item>"Television"</item>
+        <item>"Vehicle"</item>
+        <item>"Beach"</item>
+        <item>"Garden"</item>
+        <item>"Field"</item>
+        <item>"Kitchen"</item>
+        <item>"Van"</item>
+        <item>"Lunch"</item>
+        <item>"Car"</item>
+    </string-array>
+
+    <string-array name="daily_situations_translations">
+        <item>"Park"</item>
+        <item>"Bus"</item>
+        <item>"Spielplatz"</item>
+        <item>"Campingplatz"</item>
+        <item>"Badezimmer"</item>
+        <item>"Computer"</item>
+        <item>"Schreibtisch"</item>
+        <item>"Schlafzimmer"</item>
+        <item>"Couch"</item>
+        <item>"Essen"</item>
+        <item>"Wald"</item>
+        <item>"See"</item>
+        <item>"Fluss"</item>
+        <item>"Straße"</item>
+        <item>"Zimmer"</item>
+        <item>"Platz"</item>
+        <item>"Schule"</item>
+        <item>"Fernseher"</item>
+        <item>"Fahrzeug"</item>
+        <item>"Strand"</item>
+        <item>"Garten"</item>
+        <item>"Feld"</item>
+        <item>"Küche"</item>
+        <item>"Transporter"</item>
+        <item>"Mittagessen"</item>
+        <item>"Auto"</item>
+    </string-array>
+
+    <string-array name="exercise_names">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercise_descriptions">
+        <item>"Stelle dich hüftbreit hin. Gehe nun so tief in die Knie, dass deine Oberschenkel sich parallel zum Boden befinden und richte dich wieder auf. Wiederhole das ganze 10-15 Mal. Falls du Zeit hast, kannst du davon auch mehrere Sätze durchführen und dir eine Pause zwischen den Sätzen gönnen."</item>
+        <item>"Setze dich hin und hebe die Waden an und wieder ab. Wiederhole das ganze 10-15 Mal und führe gerne mehrere Sätze davon aus. Du kannst auch eine Pause von einer Minute zwischen den Sätzen einbauen.</item>
+        <item>"Stelle dich hüftbreit hin und verlager dein Körpergewicht auf deine Fußballen. Halte das ganze für 5 Sekunden und senke dann deine Fersen wieder auf den Boden ab. Gerne kannst du davon auch mehrere Sätze durchführen und dir eine Pause dazwischen gönnen."</item>
+        <item>"Begib dich in die Liegestützposition und führe eine für dich machbare Anzahl an Liegestützen aus. Führe davon 3 Sätze durch. Baue zwischen den Sätzen eine Pause von einer Minute ein.</item>
+        <item>"Ein kleines Workout für zwischendurch! Führe 20 Crunches, 10 Liegestütze und anschließend noch 20 Kniebeugen durch."</item>
+        <item>"Gehe in die Liegestützposition, stütze dich hierbei jedoch auf deinen Unterarmen ab. Versuche diese Position so lange es dir möglich ist zu halten, um deine Körpermitte zu stärken. Du kannst für diese Übung auch den Timer verwenden."</item>
+        <item>"Stelle dich mit dem Rücken an eine flache Wand o.Ä. und platziere deine Füße schulterbreit auseinander auf dem Boden. Senke deinen Oberkörper nun an der Wand hinunter so weit ab, dass deine Waden und Oberschenkel einen 90 Grad Winkel bilden. Versuche nun diese Position so lange es dir möglich ist zu halten.</item>
+        <item>"Lege dich mit dem Rücken auf den Boden und ziehe deine Füße an. Löse deinen Rücken vom Boden und richte deinen Oberkörper, so lange dein Bauch dabei unter Spannung ist, auf und gehe wieder zur Ausgangspostion, ohne den Rumpf auf dem Boden abzusetzen. Führe davon bis zu 15 Wiederholungen durch und wiederhole das ganze 3 Mal."</item>
+        <item>"Gehe dafür abwechselnd mit dem rechten Bein einen großen Schritt nach vorne und senke dann deinen Körper ab, danach mit dem linken Bein. Wiederhole das ganze 10 Mal und führe 3 Sätze davon durch. Baue gerne eine Pause von einer Minute zwischen den einzelnen Sätzen ein."</item>
+        <item>"Hierfür benötigst du einen Stuhl oder eine Erhöhung. Setze den linken Fuß dafür auf die Erhöhung, steige hinauf und danach wieder ab. Im Anschluss dann mit dem rechten Fuß. Wiederhole das ganze 10 Mal mit jedem Bein. Gerne kannst du mehrere Sätze davon durchführen und Pausen dazwischen einbauen."</item>
+        <item>"Lege deine Hände auf einer Bank oder einer Erhöhung ab, bringe deinen Körper in Stützposition und führe Liegestütze durch. Mache davon 10-15 am Stück und führe das ganze 3 Mal aus. Baue gerne ein Pause zwischen den Sätzen ein."</item>
+        <item>"Stelle dich hüftbreit hin. Gehe nun so tief in die Knie, dass deine Oberschenkel sich parallel zum Boden befinden und springe dann senkrecht nach oben. Wiederhole das ganze 10-15 Mal. Falls du Zeit hast, kannst du davon auch mehrere Sätze durchführen und dir eine Pause zwischen den Sätzen gönnen."</item>
+        <item>"Leg dich mit dem Rücken auf den Boden und setze deine Fersen auf einer Erhöhung wie z.B. einer Couch ab. Drücke nun dein Becken nach oben und spann dein Gesäß dabei an. Versuche das ganze so oft es geht durchzuführen und wiederhole die Übung 3 Mal."</item>
+        <item>"Setze dich aufrecht hin und lege deine Hände auf die Armlehnen oder den Tisch. Ziehe deine Beine nun gerade nach oben und halte diese Position für 10 Sekunden, ohne dass dein Rücken sich nach hinten neigt. Wiederhole diese Übung so oft es dir möglich ist. Baue gerne eine Pause ein."</item>
+        <item>"Laufe für eine Minute lang auf der Stelle und ziehe dabei die Knie an. Die Arme sollen dabei ebenso mitbewegt werden. Wiederhole das ganze 3 Mal und ruhe dich zwischen den Sätzen für mindestens eine Minute aus.</item>
+        <item>"Springe mit den Armen über deinem Kopf senkrecht nach oben und gehe danach direkt in die Liegestützposition und führe einen Liegestütz aus. Führe diese Übung eine Minute lang durch."</item>
+        <item>"Stelle dich mit einem Bein auf einen weichen Untergrund wie z.b. ein Kissen oder ein zusammengerolltes Handtuch, schließe deine Augen und ziehe das andere Bein an. Falls das nicht möglich ist, gerne auch mit offenen Augen. Halte diese Position, so lange es dir möglich ist. Wiederhole dann die Übung mit dem anderen Bein.</item>
+    </string-array>
+
+    <string-array name="exercises_park">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_bus">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_playground">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_camping">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_bathroom">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_computer">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_desk">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_bedroom">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_couch">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_food">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Mini-Workout</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_forest">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_lake">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_river">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_road">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_room">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_place">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_school">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_television">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_vehicle">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_beach">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Crunches</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+        <item>Stabilität</item>
+    </string-array>
+
+    <string-array name="exercises_garden">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Lunges</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_field">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_kitchen">
+        <item>Kniebeuge</item>
+        <item>Wadenheben Si.</item>
+        <item>Wadenheben St.</item>
+        <item>Liegestütze</item>
+        <item>Mini-Workout</item>
+        <item>Plank</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Step-Ups</item>
+        <item>Aufg. Liegestü.</item>
+        <item>Air-Squat</item>
+        <item>Glute Bridge</item>
+        <item>Beine anziehen</item>
+        <item>High Knees</item>
+        <item>Burpees</item>
+    </string-array>
+
+    <string-array name="exercises_van">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_lunch">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="exercises_car">
+        <item>Kniebeuge</item>
+        <item>Wadenheben St.</item>
+        <item>Wallsit</item>
+        <item>Lunges</item>
+        <item>Air-Squat</item>
+        <item>High Knees</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <style name="AppTheme" parent="HudTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AppTheme.Light" parent="HudTheme.Light">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_steps</item>
+    </style>
+
+    <style name="Datepicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:colorControlNormal">@color/vuzix_green</item>
+        <item name="android:solidColor">@color/vuzix_green</item>
+    </style>
+
+    <style name="CustomNumberPickerTheme" parent="AppTheme">
+        <item name="android:colorControlNormal">@android:color/transparent</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ImageClassification" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tfe_color_primary</item>
+        <item name="colorPrimaryDark">@color/tfe_color_primary_dark</item>
+        <item name="colorAccent">@color/tfe_color_accent</item>
+    </style>
+</resources>

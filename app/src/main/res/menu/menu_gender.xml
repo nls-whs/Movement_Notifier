@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/male"
+        android:title="Männlich"
+        android:icon="@drawable/ic_human_male" />
+
+    <item
+        android:id="@+id/female"
+        android:title="Weiblich"
+        android:icon="@drawable/ic_human_female"
+        />
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/startstop"
+        android:title="Pausieren"
+        android:icon="@drawable/ic_pause_circle_outline" />
+
+    <item
+        android:id="@+id/end"
+        android:title="Beenden"
+        android:icon="@drawable/ic_close_octagon_outline" />
+
+</menu>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vuzix.nextlevelsports">
+
+    <!-- Required for 28 and below. -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <!-- Required for 29+. -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-sdk />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".BladeSampleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/HudTheme"
+        android:launchMode="singleTop">
+        <meta-data android:name="com.vuzix.icon.tint" android:value="true" />
+        <receiver android:name=".widget.Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+            <meta-data android:name="com.vuzix.launcher.widget"
+                android:value="com.vuzix.nextlevelsports.activities.MainActivity" />
+        </receiver>
+
+        <receiver android:name=".receiver.OnBootCompleteReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver
+            android:name=".receiver.DynamicThemeReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.vuzix.intent.action.UI_DISPLAY_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="com.vuzix.icon.tint" android:value="true" />
+        </activity>
+        <activity android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity android:name=".activities.PersonalSettingsActivity"
+            android:label="@string/title_activity_personal_settings"
+            android:parentActivityName=".activities.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SettingsActivity" />
+        </activity>
+
+        <activity android:name=".activities.GenderActivity"
+            android:label="@string/title_activity_gender"
+            android:parentActivityName=".activities.PersonalSettingsActivity">
+        </activity>
+
+        <activity android:name=".activities.BirthdayActivity"
+            android:label="Geburtstag"
+            android:parentActivityName=".activities.PersonalSettingsActivity">
+        </activity>
+
+        <activity android:name=".activities.WeightActivity"
+            android:label="Gewicht"
+            android:parentActivityName=".activities.PersonalSettingsActivity">
+        </activity>
+
+        <activity android:name=".activities.HeightActivity"
+            android:label="Körpergröße"
+            android:parentActivityName=".activities.PersonalSettingsActivity">
+        </activity>
+
+        <activity android:name=".activities.StepGoalActivity"
+            android:label="Schrittziel"
+            android:parentActivityName=".activities.PersonalSettingsActivity">
+        </activity>
+
+        <activity android:name=".activities.CameraActivity"
+            android:label="Kamera"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity android:name=".activities.ExerciseActivity"
+            android:label="Übung vorschlagen"
+            android:parentActivityName=".activities.CameraActivity"/>
+
+        <receiver android:name=".receiver.WidgetUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.vuzix.intent.action.UI_DISPLAY_MODE" />
+            </intent-filter>
+            <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        </intent-filter>
+        </receiver>
+
+        <service android:enabled="true" android:name=".services.StepCounterService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

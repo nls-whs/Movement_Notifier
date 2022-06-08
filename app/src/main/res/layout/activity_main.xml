@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayoutMain">
+
+        <TextView
+            android:id="@+id/MainTV"
+            android:text="Next Level Sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/vuzix_white">
+        </TextView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayoutDay"
+        android:layout_below="@id/linearLayoutMain">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_steps_main"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/progress_bar_activity_small"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_directions_walk_24"
+                android:tint="@color/vuzix_green"
+                />
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+                -->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutMain"
+        android:layout_toEndOf="@id/linearLayoutDay"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDate"
+            android:text="Montag, 14.08.20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:id="@+id/linearLayoutSteps"
+        android:layout_below="@id/linearLayoutMain"
+        android:layout_toEndOf="@id/linearLayoutDay"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/tvStepsTaken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="8354"
+            android:textColor="@color/vuzix_white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stepGoalGoal"
+            android:text="/ 10000 Schritten"
+            android:textSize="18sp"
+            android:textColor="@color/vuzix_white"
+            android:layout_below="@id/tvStepsTaken"
+            android:alpha="0.75"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/linearLayoutDay">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/progressBarDay1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-24dp">
+
+            <ImageView
+                android:id="@+id/distancedistance"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_map_marker_distance"
+                android:tint="@color/vuzix_green"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDistanceMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/distancedistance"
+                android:paddingTop="16dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDay12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="km"
+                android:textSize="14sp"
+                android:alpha="0.75"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/tvDistanceMain"
+                android:layout_marginTop="-8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/progressBarDay2"
+            android:layout_below="@id/linearLayoutMain"
+            android:layout_marginTop="-24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/timetime"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_timer"
+                android:tint="@color/vuzix_green"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvTimeMoving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="DO"
+                android:textSize="18sp"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/timetime"
+                android:paddingTop="16dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDay22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="min"
+                android:textSize="14sp"
+                android:alpha="0.75"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/tvTimeMoving"
+                android:layout_marginTop="-8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/progressBarDay3"
+            android:layout_below="@id/linearLayoutMain"
+            android:layout_marginTop="-24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/fire"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_fire"
+                android:tint="@color/vuzix_green"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="FR"
+                android:textSize="18sp"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/fire"
+                android:paddingTop="16dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDay32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Kcal"
+                android:textSize="14sp"
+                android:alpha="0.75"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/tvCalories"
+                android:layout_marginTop="-8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/progressBarDay4"
+            android:layout_below="@id/linearLayoutMain"
+            android:layout_marginTop="-24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/exercise"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_weight_lifter"
+                android:tint="@color/vuzix_green"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvExercisesDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SA"
+                android:textSize="18sp"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/exercise"
+                android:paddingTop="16dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDay42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Übungen"
+                android:textSize="14sp"
+                android:alpha="0.75"
+                android:textColor="@color/vuzix_white"
+                android:layout_below="@id/tvExercisesDone"
+                android:layout_marginTop="-8dp"/>
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayoutMain"/>
+        -->
